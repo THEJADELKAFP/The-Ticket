@@ -1,8 +1,22 @@
 {% extends "layout.html" %}  
 
 {% block content %}
-  <h1>Welcome to the Home Page!</h1>
+  <div class="portada">
+    <video src="{{ url_for('static', filename='video/portada.mp4') }}" type="video/mp4" autoplay muted loop>
+      
+    </video>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="evento">
+      <div class="fecha"><span>27-10-24</span>
+      <p>Peparate para el mejor evento del año que podras disfrutar</p>
+    </div>
+      <div class="name-evento">
+        <H1>TU SHOW</H1>
+        <p>LUGAR: ZONA, CALLE, LOCAL</p>
+      </div>
+    </div>
+
+</div>
+
   <p>This is some content specific to the home page.</p>
 {% endblock %}

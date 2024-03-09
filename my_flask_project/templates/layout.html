@@ -7,24 +7,25 @@
   </head>
 <body>
 
-    <header>
+    <div class="menu">
         <nav>
           <a href="#">Inicio</a>
           <a href="#">Acerca de</a>
           <a href="#">Contacto</a>
         </nav>
-      </header>
+    </div>
 
   <main>
-    {% block content %}{% endblock %}
+    {% block content %}
+    {% endblock %}
   </main>
 
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
   
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 My Website</p>
-    <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+    <p>&copy; JFK COMPANY</p>
+    <a href="#" class="text-white text-decoration-none">Informacion sobre JFK</a>
   </footer>
 </body>
 </html>

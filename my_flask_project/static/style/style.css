@@ -6,20 +6,90 @@
 /* Menu al hacer scroll se hace borrosa 
 */
 
-header {
+.menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: #fff;  /* Ajustar el color de fondo del menú */
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .menu nav {
     padding: 20px;
   }
   
-  main {
-    margin-top: 80px;  /* Dejar espacio para el menú fijo */
+  .menu a {
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(184, 184, 184);
+    transition: 0.5s;
   }
 
-header a{
-    margin: 10px;
+.menu a:hover{
+    color: rgb(255, 255, 255);
+}
+  
+  .menu main {
+    margin-top: 80px; /* Dejar espacio para el menú fijo */
+  }
+  
+
+  /*portada
+  */
+
+.portada{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-position: -1;
+}
+
+.portada video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.evento{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.fecha{
+    width: 50%;
+    height: 100%;
+}
+
+.name-evento{
+
+    width: 50%;
+    height: 100%;
+}
+
+
+.fecha,
+.name-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    text-align: center;
+}
+.fecha, .name-evento p{
+    color: aliceblue;
+    font-size: small;
+}
+
+.fecha span,
+.name-evento h1 {
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
 }
