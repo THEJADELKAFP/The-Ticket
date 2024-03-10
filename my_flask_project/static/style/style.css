@@ -13,6 +13,9 @@
     width: 100%;
     z-index: 100;
     transition: background-color 0.3s ease-in-out;
+
+    animation: animation;
+    animation-timeline: scroll(root block);
   }
 
   .menu nav {
@@ -35,7 +38,14 @@
     margin-top: 80px; /* Dejar espacio para el menú fijo */
   }
   
-
+@keyframes animation{
+    to{
+        background-color: rgba(255, 255, 255, 0.164);
+        backdrop-filter: blur(10px);
+        color: rgb(255, 255, 255);
+        
+    }
+}
   /*portada
   */
 
@@ -93,3 +103,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: aliceblue;
 }
+
+
+/* 
+*/
