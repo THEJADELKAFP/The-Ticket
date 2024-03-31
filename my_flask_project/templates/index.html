@@ -5,13 +5,13 @@
     <video src="{{ url_for('static', filename='video/portada.mp4') }}" type="video/mp4" autoplay muted loop></video>
 
     <div class="evento">
-      <div class="fecha"><span>27-10-24</span>
-      <p>Peparate para el mejor evento del año que podras disfrutar</p>
+      <div class="fecha"><span id="Fecha">27-10-24</span>
+      <p id="InfoDeFecha">Peparate para el mejor evento del año que podras disfrutar</p>
     </div>
     
       <div class="name-evento">
-        <H1>TU SHOW</H1>
-        <p>LUGAR: ZONA, CALLE, LOCAL</p>
+        <H1 id="Name-Evento">TU SHOW</H1>
+        <p id="Fechas-Evento">LUGAR: ZONA, CALLE, LOCAL</p>
       </div>
     </div>
 
@@ -27,4 +27,6 @@
   <div class="info-evento-texto"></div>
   
 </div>
+
+<button type="button" onclick="SubidaDeDato()">Subir datos</button>
 {% endblock %}
